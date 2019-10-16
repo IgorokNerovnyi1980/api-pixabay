@@ -45,7 +45,7 @@ class App extends Component {
         </header>
         <div className="App">
           {images !== null ? <PageImg arr={images} /> : <p>loading...</p>}
-          {/* <PageVideo arr={videos} /> */}
+          {videos !== null ? <PageVideo arr={videos} /> : <p>loading...</p>}
         </div>
       </>
     );

@@ -1,0 +1,13 @@
+добавить 
+npm add gh-pages
+
+npm install --save gh-pages
+
+
+в Pacage.jason дописать
+"homepage": "http.... " //адрес репозитория
+и 
+scripts
+
+"predeploy": "npm run build",
+"deploy" : "gh-pages -d build"

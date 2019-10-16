@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Player } from "video-react";
 
 const Wrapper = styled.div`
   width: 99%;
@@ -17,7 +18,7 @@ const Text = styled.p`
   word-wrap: break-word;
 `;
 
-const ImgBox = styled.div`
+const Box = styled.div`
   width: 30%;
   height: 98%;
   display: flex;
@@ -26,24 +27,14 @@ const ImgBox = styled.div`
   overflow: hidden;
   position: relative;
 `;
-const Img = styled.img`
-  max-width: none;
-  min-width: auto;
-  min-height: auto;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
 
-const ItemImg = ({ url }) => (
+const ItemVideo = ({ obj }) => (
   <Wrapper>
-    <Text>{url}</Text>
-    <ImgBox>
-      <Img src={url} alt="" />
-    </ImgBox>
+    <Text>{obj.url}</Text>
+    <Box>
+      <Player playsInline src={obj.url} />
+    </Box>
   </Wrapper>
 );
 
-export default ItemImg;
+export default ItemVideo;
