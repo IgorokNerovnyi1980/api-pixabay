@@ -7,11 +7,12 @@ import PageVideo from "./Components/ForVideo";
 class App extends Component {
   state = {
     images: null,
-    videos: null
+    videos: null,
+    arrId: []
   };
 
   componentDidMount() {
-    fetch(`${url.img}1`)
+    fetch(`${url.img}${url.id}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -20,7 +21,7 @@ class App extends Component {
       })
       .catch(err => console.log(err));
 
-    fetch(`${url.video}3`)
+    fetch(`${url.video}${url.id}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -32,12 +33,7 @@ class App extends Component {
 
   render() {
     const { images, videos } = this.state;
-    if (videos) {
-      console.log(videos);
-    }
-    if (images) {
-      console.log(images);
-    }
+
     return (
       <>
         <header className="Header">

@@ -55,5 +55,6 @@
     "redux-thunk": "^2.3.0",
     "shortid": "^2.2.15",
     "styled-components": "^4.4.0"
-  }
+  },
+  "homepage": "https://IgorokNerovnyi1980.github.io/api-pixabay"
 }

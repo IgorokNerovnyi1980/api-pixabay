@@ -15,6 +15,7 @@ const Text = styled.p`
   width: 70%;
   font-size: 0.8rem;
   word-wrap: break-word;
+  text-align: center;
 `;
 
 const ImgBox = styled.div`
@@ -39,7 +40,11 @@ const Img = styled.img`
 
 const ItemImg = ({ url }) => (
   <Wrapper>
-    <Text>{url}</Text>
+    <Text>
+      <a href={url} download="">
+        Download
+      </a>
+    </Text>
     <ImgBox>
       <Img src={url} alt="" />
     </ImgBox>

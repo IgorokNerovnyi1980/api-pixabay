@@ -5,7 +5,8 @@ function random() {
   return result;
 }
 
-// export const id = String(random());
+export const id = String(random());
+
 export const img = `https://pixabay.com/api/?key=${key}&id=`;
 export const video = `https://pixabay.com/api/videos/?key=${key}&id=`;
 

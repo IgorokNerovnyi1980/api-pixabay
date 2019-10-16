@@ -16,6 +16,7 @@ const Text = styled.p`
   width: 70%;
   font-size: 0.8rem;
   word-wrap: break-word;
+  text-align: center;
 `;
 
 const Box = styled.div`
@@ -30,7 +31,12 @@ const Box = styled.div`
 
 const ItemVideo = ({ obj }) => (
   <Wrapper>
-    <Text>{obj.url}</Text>
+    <Text>
+      <a href={obj.url} download="">
+        Download
+      </a>
+    </Text>
+
     <Box>
       <Player playsInline src={obj.url} />
     </Box>
