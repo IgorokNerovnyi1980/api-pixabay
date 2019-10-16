@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   height: 10vh;
   margin: 0 auto;
   margin-top: 0.2em;
-  border-bottom: 0.2em solid rgb(70, 68, 68);
+  border-bottom: 0.1em solid rgb(70, 68, 68);
   display: flex;
   justify-content: space-around;
   align-items: center;
